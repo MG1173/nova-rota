@@ -1,0 +1,11 @@
+// Proteção básica contra copiar texto
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.oncopy = (e) => {
+    e.preventDefault();
+    alert("Copiar não é permitido neste site.");
+  };
+
+  document.body.oncontextmenu = (e) => {
+    e.preventDefault();
+  };
+});
